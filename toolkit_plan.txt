@@ -1,0 +1,59 @@
+PERSONAL MINITOOLKIT — PLAN
+Tool 1: Number Guessing Game
+Description: The computer picks a secret number between 1 and 20 and the
+             user keeps guessing until they get it right, with hints.
+
+Tool 2: ToDo List
+Description: A running list the user can add tasks to, view all tasks, or
+             mark one as done by removing it.
+
+Tool 3: Simple Calculator
+Description: Asks for two numbers and an operation (+, , *, /) and prints
+             the result.
+
+Tool 4: Name Formatter
+Description: Asks for a first and last name and prints it neatly formatted
+             in several styles (title case, initials, uppercase).
+
+
+MENU TEXT (exactly what the program shows)
+
+
+ MY PERSONAL MINITOOLKIT 
+1. Number Guessing Game
+2. ToDo List
+3. Simple Calculator
+4. Name Formatter
+5. Quit
+
+Choose a tool (15):
+
+
+CONCEPTS EACH TOOL USES
+
+
+Number Guessing Game:
+   while loop (loop until the guess is correct)
+   if / elif / else (too high, too low, correct)
+   random module for the secret number
+   fstrings for hints
+
+ToDo List:
+   list that changes while the program runs (.append, .remove, in)
+   while loop for the inner todo menu
+   if / elif / else to route the subchoices
+   fstrings for task display
+
+Simple Calculator:
+   if / elif / else to pick the operation
+   try / except to handle nonnumber input safely
+   fstrings for the result message
+
+Name Formatter:
+   string methods (.title(), .upper(), indexing, splitting)
+   fstrings for the formatted output
+
+Main menu loop:
+   while True with a break on Quit
+   if / elif / else for the menu choice
+   else branch prints a polite message for an invalid choice
